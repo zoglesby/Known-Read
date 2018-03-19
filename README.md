@@ -11,6 +11,7 @@ to link the book to Amazon, if you don't want to make that you will need to remo
 that linking in `templates/default/entity/Read/Read.tpl.php`
 
 Read more about read posts: https://indieweb.org/read
+
 Based on https://github.com/cleverdevil/Known-Food
 
 TODO:
