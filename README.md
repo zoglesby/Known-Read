@@ -10,6 +10,9 @@ This is currently using a <a href...> to a php file outside of the plugin in ord
 to link the book to Amazon, if you don't want to make that you will need to remove
 that linking in `templates/default/entity/Read/Read.tpl.php`
 
+Read more about read posts: https://indieweb.org/read
+Based on https://github.com/cleverdevil/Known-Food
+
 TODO:
 -----
 - Put link support in plugin (move isbn.php into plugin)
@@ -22,11 +25,9 @@ TODO:
   - Add u-in-reply-to linking the finished with to-read, reading
   - Create a custom page that groups all the states for each book together
 - Clean up big bad if...elseif for $readState
+- Add if statement for link, only put in link if ISBN has a value.
 
 DONE:
 -----
 - Add Author variable
 - Add ISBN variable
-
-
-Based on https://github.com/cleverdevil/Known-Food
