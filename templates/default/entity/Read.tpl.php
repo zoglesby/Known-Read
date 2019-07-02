@@ -15,7 +15,7 @@
 
             <div class="e-content">
                 <p><data class="p-read-status" value="<?= $vars['object']->getCategory() ?>"><?php if ($vars['object']->getCategory() == "to-read"){$readState = "Want to Read: ";} elseif ($vars['object']->getCategory() == "reading") {$readState = "Reading: ";} elseif ($vars['object']->getCategory() == "finished") {$readState = "Finished Reading: ";}
- echo $readState; ?></data> <cite class="p-read-of h-cite"><a href="/isbn.php?isbn=<?= preg_replace("/[^a-zA-Z0-9]+/", "", $vars['object']->getIsbn()) ?>"><?= htmlentities(strip_tags($vars['object']->getTitle()), ENT_QUOTES, 'UTF-8'); ?></a><cite> by <?= htmlentities(strip_tags($vars['object']->getAuthor()), ENT_QUOTES, 'UTF-8'); ?></p><br />
+ echo $readState; ?></data> <cite class="p-read-of h-cite"><a href="https://isbnsearch.org/isbn/<?= preg_replace("/[^a-zA-Z0-9]+/", "", $vars['object']->getIsbn()) ?>"><?= htmlentities(strip_tags($vars['object']->getTitle()), ENT_QUOTES, 'UTF-8'); ?></a><cite> by <?= htmlentities(strip_tags($vars['object']->getAuthor()), ENT_QUOTES, 'UTF-8'); ?></p><br />
                 <?= $this->__(['value' => $vars['object']->body, 'object' => $vars['object']])->draw('forms/output/richtext'); ?>
             </div>
 

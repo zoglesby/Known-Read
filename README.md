@@ -6,10 +6,8 @@ CMS](http://withknown.com). To install, simply clone this repository to your
 `IdnoPlugins` subdirectory of your Known installation, using the directory name
 `Read`, and enable the plugin.
 
-This is currently using a <a href...> to a php file outside of the plugin in order
-to link the book to Amazon, if you don't want to make that you will need to remove
-that linking in `templates/default/entity/Read/Read.tpl.php`
-
+This is currently using a <a href...> of the ISBN to isbnsearch.org. If you don't want that
+or want to use your own Amazon affiliates link (or something else) change or remove it in `templates/default/entity/Read.tpl.php`
 Read more about read posts: https://indieweb.org/read
 
 Based on https://github.com/cleverdevil/Known-Food
