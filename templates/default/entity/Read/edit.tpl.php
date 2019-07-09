@@ -72,7 +72,7 @@
                     <label for="title">Title</label>
                     <input type="text" name="title" id="title" placeholder="What the book?" value="<?= htmlspecialchars($title) ?>" class="form-control"/>
                     <label for="author">Author</label>
-                    <input type="text" name="author" id="author" placeholder="What wrote it?" value="<?= htmlspecialchars($author) ?>" class="form-control"/>
+                    <input type="text" name="author" id="author" placeholder="Who wrote it?" value="<?= htmlspecialchars($author) ?>" class="form-control"/>
                     <label for="isbn">isbn</label>
                     <input type="text" name="isbn" id="isbn" placeholder="ISBN" value="<?= htmlspecialchars($isbn) ?>" class="form-control"/>
                     <!-- styled category -->
